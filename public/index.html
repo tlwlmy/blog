@@ -61,122 +61,6 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-ader" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/01/29/ader/" class="article-date">
-  <time datetime="2016-01-28T17:23:40.000Z" itemprop="datePublished">2016-01-29</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/01/29/ader/">广告主对接</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="一-自我介绍">一.自我介绍</h3><pre><code><span class="number">1.</span>刘云山 （企业qq座右铭 - 中间层bug王，我是一坑货，大家不要在意）
-<span class="number">2.</span>主要负责ADN积分墙中间层和ASO后台
-<span class="number">3.</span>广告主对接方案，广告主数据异常排查
-</code></pre><h3 id="二-对接轮班制度">二.对接轮班制度</h3><pre><code>1.对接负责人
-    -<span class="ruby">  刘云山
-</span>    -<span class="ruby">  吴素明(需要萌萌的帅哥)
-</span>    -<span class="ruby">  霍志权
-</span>    -<span class="ruby">  吴浩光
-</span>2.对接qq
-    -<span class="ruby">  技术支持 - 小云，<span class="constant">QQ</span>号：<span class="number">3360073382</span>(云山，浩光)
-</span>    -<span class="ruby">  技术支持 - 小志，<span class="constant">QQ</span>号：<span class="number">2979336901</span>(素明，志权)
-</span>3.分为两组：云山和志权，素明和浩光
-4.每组轮流值班两天，广告主对接全权由当天值班的人员负责
-5.如果一个广告主对接比较长，广告主有特别的要求，会记录到wiki上，以便换岗值班人员查看和后续问题排查。
-</code></pre><h3 id="三-对接文档">三.对接文档</h3><pre><code><span class="number">1</span><span class="class">.YouMi</span> Android 深度任务合作文档 - 刘云山讲解
-<span class="number">2</span><span class="class">.YouMi</span> iOS 深度任务合作文档 - 刘云山讲解
-<span class="number">3</span><span class="class">.YouMi</span> 广告主查询接口文档 - 吴素明讲解
-<span class="number">4</span>.友商-有米 iOS应用推广技术说明 - 吴素明讲解
-<span class="number">5</span>.有米友商查询接口文档 - 吴素明讲解
-</code></pre><h3 id="四-对接协助工具">四.对接协助工具</h3><pre><code><span class="number">1</span>.广告请求列表过滤查询(http<span class="variable">s:</span>//portal.<span class="keyword">y</span>.<span class="keyword">cn</span>/User/track/<span class="keyword">wall</span>/<span class="number">1</span>)
-<span class="number">2</span>.广告订单查询接口(http<span class="variable">s:</span>//portal.<span class="keyword">y</span>.<span class="keyword">cn</span>/User/check_order)
-<span class="number">3</span>.广告点击回调广告主接口排查(http<span class="variable">s:</span>//portal.<span class="keyword">y</span>.<span class="keyword">cn</span>/User/check_ader_click)
-<span class="number">4</span>.友商点击查询(http<span class="variable">s:</span>//portal.<span class="keyword">y</span>.<span class="keyword">cn</span>/User/check_youshang_click)
-<span class="number">5</span>.查询广告主回调(http<span class="variable">s:</span>//portal.<span class="keyword">y</span>.<span class="keyword">cn</span>/User/check_mac)
-<span class="number">6</span>.生成模拟请求的链接(http<span class="variable">s:</span>//portal.<span class="keyword">y</span>.<span class="keyword">cn</span>/tech/gen_clk)
-<span class="number">7</span>.积分墙回调订单<span class="keyword">r</span> 参数报错协议(http<span class="variable">s:</span>//<span class="keyword">conf</span>.umlife.net/pages/viewpage.action?pageId=<span class="number">19923047</span>)
-<span class="number">8</span>.积分墙广告投放规则拦截(http<span class="variable">s:</span>//<span class="keyword">conf</span>.umlife.net/pages/viewpage.action?pageId=<span class="number">27624188</span>)
-<span class="number">9</span>.广告平台对外ip记录(http<span class="variable">s:</span>//<span class="keyword">conf</span>.umlife.net/pages/viewpage.action?pageId=<span class="number">23003256</span>)
-</code></pre><h3 id="五-安卓广告主对接">五.安卓广告主对接</h3><pre><code>1.对接模式
-    -<span class="ruby"> 主任务安装体验
-</span>    -<span class="ruby"> 主任务安装体验 + 深度任务注册回调 + 深度任务等级
-</span>    -<span class="ruby"> 主任务注册回调
-</span>2.回调广告主方式
-    -<span class="ruby"> 按照运营设置回调广告主接口
-</span>    -<span class="ruby"> 根据广告主需求，按照配置文件回调广告主接口
-</span>3.运营设置
-    -<span class="ruby"> 淘竹马(wadid=<span class="number">16133</span>)
-</span>    -<span class="ruby"> 跳网页
-</span>    -<span class="ruby"> 接口(<span class="symbol">http:</span>/<span class="regexp">/b2c.taozhuma.com/youmiad</span>.<span class="keyword">do</span>?adType=<span class="number">1</span>&amp;channel=<span class="number">1</span>&amp;ifa={ifa}&amp;mac={mac}&amp;callback_url={callback_url})
-</span>4.配置文件
-    -<span class="ruby"> 微贷网(wadid=<span class="number">16069</span>)
-</span>    -<span class="ruby"> 跳网页
-</span>    -<span class="ruby"> 接口(<span class="symbol">https:</span>/<span class="regexp">/m.weidai.com.cn/cooperation</span>?idfa={imei}&amp;reg=<span class="number">2</span>&amp;time=yyyyMMddhhmmss&amp;sign=md5(idfa+<span class="string">"weidaiwang"</span>+time))
-</span>5.广告主回到有米方式
-    -<span class="ruby"> 调用广告接口，直接传callbak_url参数(<span class="symbol">http:</span>/<span class="regexp">/callback.api.youmi.net/v</span>2/ad_eff?s=<span class="number">9</span>voSxyHhnMejwELdNKzJ29vExrXkRMdkCanOkrB60lZp2u3K26wzI<span class="number">_</span>)
-</span>    -<span class="ruby"> 调用广告主接口，只创设备参数，广告主固定参数回调(<span class="symbol">http:</span>/<span class="regexp">/callback.api.youmi.net/v</span>2/ad_eff?appid=xxxxx&amp;imei={imei})
-</span>6.和广告主交互
-    -<span class="ruby"> 后台回调（运营设置或者配置文件）
-</span>    -<span class="ruby"> 跳网页回调(配置文件，采用参数回调)</span>
-</code></pre><h3 id="六-常见对接问题">六.常见对接问题</h3><pre><code>1.为什么要对接
-    -<span class="ruby"> 因为我们的sdk检测不到用户进一步的行为（注册，充值，绑卡），我们需要广告主的服务器进一步的向我们反馈数据。
-</span>
-2.对接的流程
-    -<span class="ruby"> 用户在积分墙上面点击广告后，有米会将产生点击行为的用户设备信息请求到广告主的接口（该信息包含设备标识符imei、imsi和mac、ifa等）。广告主收到有米请求的点击数据后，将该数据与广告主统计的激活数据进行匹配，匹配到激活时可认为该数据是有米推广带来的量，从而将该激活信息回调给有米，有米将接口收到的回调数据作为后期对账结算数。
-</span>      由于该流程的数据回调控制权在广告主方，广告主在发现数据有异常时可以直接不回调该数据，以免后续出现数据纠纷。
-      这个过程很重要，有不少广告主的技术是很不清楚流程的，这个时候运营需要跟对方完全的解释清楚对接的流程，确认对方已经清楚了整个流程，再进行测试，否则测试是很难进行下去的。
-
-3.做这个接口需要更改客户端代码吗？
-    -<span class="ruby"> 客户端只需要获取到用户手机的设备信息，并将手机设备信息上传到服务器上即可。接口的数据接收、数据匹配及数据回调均在服务端完成即可。
-</span>
-4.文档里的激活如何定义？
-    -<span class="ruby"> 用户的激活行为，可以指启动app、注册、创建角色、达到一定的等级等。该标准由广告主确定，并且作为结算数据的标准。需要达到标准才进行回调，这个标准运营在测试的时候也需要进行检查，如果没有达到标准就收到了回调数据，需要跟广告主的技术说明，以免之后的数据纠纷。
-</span>
-5.广告主需要做什么工作？
-    -<span class="ruby"> 广告主首先需要确认要推广的app能够获取到设备信息，然后再确定app是否能够将设备信息发送到服务器上，完成接口开发及对接工作。
-</span>
-6.如何识别请求数据来自哪个渠道？
-    -<span class="ruby"> 可以在接口中，增加参数标识渠道，例如source=youmi这样的字段标识数据请求来自有米渠道。
-</span>
-7.广告主调用有米callback_url时，需要做其他特别处理吗？
-    -<span class="ruby"> 广告主收到callback_url时，需要对其进行urldecode一下，即可得到正确的回调地址。
-</span>
-8.一般什么样的接口，需要找技术修改
-    -<span class="ruby"> 部分广告主有提供接口文档，凡是文档中包含了md5、sha1、aes、sign等字样，表示该接口广告主希望我们的参数进行加密，这个时候请运营尽情发挥自己的表情包说服对方不要加密，如果说服失败，这个时候就可以将文档发给当天的对接人进行下一步的对接。
-</span>
-9.如何确认广告主收到了我们的请求
-    -<span class="ruby"> 后台工具链接 <span class="symbol">https:</span>/<span class="regexp">/portal.y.cn/</span><span class="constant">User</span>/check_ader_click
-</span>    -<span class="ruby"> 在使用后台的检查工具，填写广告主的域名之后，左边显示的是我们请求广告主的链接，右边显示的是请求返回的结果，基本上正确的返回结果是一目了然的，如果返回结果里面有大量的error的请及时通知广告主。</span>
-</code></pre>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/01/29/ader/" data-id="cijz2ncev00055syamaea34sx" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/广告主，对接文档，绿色后台，工具/">广告主，对接文档，绿色后台，工具</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
     <article id="post-sshpass" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/01/21/sshpass/" class="article-date">
@@ -205,7 +89,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/01/21/sshpass/" data-id="cijz2nceo00015syahzk7pj5e" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/01/21/sshpass/" data-id="cik699it70001wayarjw16sf4" class="article-share-link">Share</a>
       
       
     </footer>
@@ -323,7 +207,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/01/08/Cmd-Markdown编辑阅读器/" data-id="cijz2ncdv00005sya7a5d4ts3" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/01/08/Cmd-Markdown编辑阅读器/" data-id="cik699it00000wayacougps93" class="article-share-link">Share</a>
       
       
     </footer>
@@ -513,7 +397,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/01/08/Cmd简明语法手册/" data-id="cijz2ncf5000a5syamhrxks93" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/01/08/Cmd简明语法手册/" data-id="cik699itp0007wayab3xu3a4b" class="article-share-link">Share</a>
       
       
     </footer>
@@ -557,7 +441,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/01/05/VirtualBox-Usb设备/" data-id="cijz2ncf000085syakh3vimlh" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/01/05/VirtualBox-Usb设备/" data-id="cik699itl0005wayabcy04k9s" class="article-share-link">Share</a>
       
       
     </footer>
@@ -596,7 +480,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/12/24/django-database/" data-id="cijz2nceu00045syadhr0xl7v" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/12/24/django-database/" data-id="cik699itd0004wayai8760h9z" class="article-share-link">Share</a>
       
       
     </footer>
@@ -628,7 +512,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/10/23/php_get_url/" data-id="cijz2ncer00025sya93809i0k" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/10/23/php_get_url/" data-id="cik699it90002wayad9ypbva8" class="article-share-link">Share</a>
       
       
     </footer>
@@ -673,7 +557,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/10/20/hello-world/" data-id="cijz2nces00035sya77c4xymt" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/10/20/hello-world/" data-id="cik699itb0003waya994wf38x" class="article-share-link">Share</a>
       
       
     </footer>
@@ -710,7 +594,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/10/15/First-blog/" data-id="cijz2ncf200095syac77yguhq" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/10/15/First-blog/" data-id="cik699itn0006waya778tj2ze" class="article-share-link">Share</a>
       
       
     </footer>
@@ -728,28 +612,14 @@
     
   
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/广告主，对接文档，绿色后台，工具/">广告主，对接文档，绿色后台，工具</a><span class="tag-list-count">1</span></li></ul>
-    </div>
-  </div>
-
   
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/广告主，对接文档，绿色后台，工具/" style="font-size: 10px;">广告主，对接文档，绿色后台，工具</a>
-    </div>
-  </div>
-
   
     
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">3</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">3</span></li></ul>
     </div>
   </div>
 
@@ -759,10 +629,6 @@
     <h3 class="widget-title">Recents</h3>
     <div class="widget">
       <ul>
-        
-          <li>
-            <a href="/2016/01/29/ader/">广告主对接</a>
-          </li>
         
           <li>
             <a href="/2016/01/21/sshpass/">Ubuntu sshpass install</a>
@@ -778,6 +644,10 @@
         
           <li>
             <a href="/2016/01/05/VirtualBox-Usb设备/">VirtualBox Usb设备</a>
+          </li>
+        
+          <li>
+            <a href="/2015/12/24/django-database/">django数据库基本操作</a>
           </li>
         
       </ul>
