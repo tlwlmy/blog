@@ -1,7 +1,10 @@
-title: sentry-conf
+title: sentry.conf.py
 date: 2016-03-01 18:11:26
 tags:
 ---
+
+sentry.conf.py是sentry服务默认生成配置，通过配置能修改使用的数据库，缓存队列，缓存，邮件服务器等，此配置使用的MySql数据库，sentry默认使用PostgreSql数据库
+<!-- more -->
 
 ```bash
 # This file is just Python, with a touch of Django which means
@@ -9,6 +12,7 @@ tags:
 from sentry.conf.server import *
 
 import os.path
+
 
 CONF_ROOT = os.path.dirname(__file__)
 

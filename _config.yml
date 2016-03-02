@@ -3,16 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
+title: tlwlmy'blog
+subtitle: 
+description: 
 author: tlwlmy
 language: zh-Hans
-timezone:
+email: tlwlmy@163.com
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://www.tlwlmy.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -26,6 +27,8 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+  - README.md
+  - CNAME
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -39,7 +42,7 @@ relative_link: false
 future: true
 highlight:
   enable: true
-  line_number: true
+  line_number: false
   auto_detect: true
   tab_replace:
 
@@ -47,6 +50,14 @@ highlight:
 default_category: uncategorized
 category_map:
 tag_map:
+
+# Archives 默认值为2，这里都修改为1，相应页面就只会列出标题，而非全文
+## 2: Enable pagination
+## 1: Disable pagination
+## 0: Fully Disable
+archive: 1
+category: 1
+tag: 1
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
@@ -71,3 +82,12 @@ deploy:
   type: git       #部署到哪里
   repo: git@github.com:tlwlmy/tlwlmy.github.io.git    #部署路径，你的github仓库
   branch: master
+
+# Swiftype Search API Key
+swiftype_key: CoxpojFECM9QX7VgNdYY
+
+# Baidu Analytics ID
+baidu_analytics: 0708cc463e27017daf29cd4eaec9577e
+
+# Duoshuo ShortName
+duoshuo_shortname: tlwlmy

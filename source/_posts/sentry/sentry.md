@@ -4,6 +4,7 @@ tags: sentry,log,python,django
 ---
 
 Sentry 是一款基于 Django 实现的日志管理工具，Disqus 团队对其代码贡献不少。虽然 Sentry 本身是 Python 实现的，但是其日志监控功能却不局限于 python，对诸如 Node.js, php, ruby, C#, java 等语言的项目都可以做到无缝集成，甚至可以用来对 iOS, Android 移动客户端以及 Web前端异常进行跟踪。主动上报的方式将错误信息等进行收集汇总和提醒，以帮助我们及时发现项目中的问题。
+<!-- more -->
 
 ### 1.安装环境
 

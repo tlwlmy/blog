@@ -164,13 +164,13 @@ mathjax:
 
 
 # Swiftype Search API Key
-swiftype_key: CoxpojFECM9QX7VgNdYY
+#swiftype_key: CoxpojFECM9QX7VgNdYY
 
 # Baidu Analytics ID
-baidu_analytics: 0708cc463e27017daf29cd4eaec9577e
+#baidu_analytics: 0708cc463e27017daf29cd4eaec9577e
 
 # Duoshuo ShortName
-duoshuo_shortname: tlwlmy
+#duoshuo_shortname: tlwlmy
 
 # Disqus
 #disqus_shortname:
