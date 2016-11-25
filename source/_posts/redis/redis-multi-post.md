@@ -24,9 +24,9 @@ sudo apt-get install -y redis-server
 ### 三、redis默认配置的端口号是6379，添加多配置一个6380端口
 * 复制redis配置文件
 ```bash
-cp /etc/redis/redis.conf /etc/redis/redis6380.conf
+cp /etc/redis/redis.conf /etc/redis/redis_6380.conf
 ```
-* 修改redis6380.conf文件，vim /etc/redis/redis6380.conf
+* 修改redis6380.conf文件，vim /etc/redis/redis_6380.conf
 ```bash
 pidfile /var/run/redis/redis-server6380.pid
 port 6380
