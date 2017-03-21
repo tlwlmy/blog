@@ -25,16 +25,16 @@ http://pinyin.sogou.com/linux/?r=pinyin
 * [linux终端选择参考](http://blog.jobbole.com/59165/)
 * ubuntu下是使用Terminator和Guake，mac下使用iTerm2，安装后自行配置终端颜色，字体，透明度，快捷键
 ```
-apt-get install terminator
+sudo apt-get install terminator
 sudo apt-get install guake
 ```
 
 # 4.Consolas字体添加
 * 添加consolas字体，修改终端Terminator和Guake字体，选择consolas字体，退出重新打开终端即可以生效
+* 下载：http://pan.baidu.com/s/1pLlCY5l
 ```
-wget http://pan.baidu.com/s/1pLlCY5l
-mkdir /usr/share/fonts/winfonts
-sudo cp consolas /usr/share/fonts/winfonts/
+sudo mkdir /usr/share/fonts/winfonts
+sudo cp consola.ttf /usr/share/fonts/winfonts/
 cd /usr/share/fonts/winfonts/
 sudo mkfontscale    # 创建字体的fonts.scale文件，它用来控制字体旋转缩放
 sudo mkfontdir      # 创建字体的fonts.dir文件，它用来控制字体粗斜体产生
