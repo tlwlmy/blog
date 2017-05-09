@@ -60,7 +60,9 @@ wget http://download.virtualbox.org/virtualbox/5.1.18/virtualbox-5.1_5.1.18-1140
 sudo dpkg -i virtualbox-5.1_5.1.18-114002~Ubuntu~trusty_amd64.deb
 ```
 
-# 7.Indicator-SysMonitor桌面顶部显示CPU、内存和网络使用情况
+# 7.Indicator-SysMonitor桌面安装
+* Indicator-SysMonitor 的功能非常简单，但运行良好。
+* 一旦安装并开始运行，它可以在桌面顶部顶部显示CPU、内存和网络使用情况
 ```
 sudo add-apt-repository ppa:fossfreedom/indicator-sysmonitor
 sudo apt-get update
