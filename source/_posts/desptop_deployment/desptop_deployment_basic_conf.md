@@ -59,3 +59,10 @@ sudo apt-get install gnome-do
 wget http://download.virtualbox.org/virtualbox/5.1.18/virtualbox-5.1_5.1.18-114002~Ubuntu~trusty_amd64.deb
 sudo dpkg -i virtualbox-5.1_5.1.18-114002~Ubuntu~trusty_amd64.deb
 ```
+
+# 7.Indicator-SysMonitor桌面顶部显示CPU、内存和网络使用情况
+```
+sudo add-apt-repository ppa:fossfreedom/indicator-sysmonitor
+sudo apt-get update
+sudo apt-get install indicator-sysmonitor
+```
