@@ -77,6 +77,10 @@ Sentry 是一款基于 Django 实现的日志管理工具，Disqus 团队对其�
  sentry --config=/etc/sentry/sentry.conf.py upgrade
  sentry --config=/etc/sentry/sentry.conf.py start
  ```
+ - 创建用户
+ ```
+SENTRY_CONF=/etc/sentry sentry createuser
+ ```
  - sentry三个主要模块：web，worker，cron，用supervisor启动的
  ```bash
  [program:sentry-web]
